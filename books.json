@@ -1,0 +1,2492 @@
+[
+  {
+    "id": "1776",
+    "title": "1776",
+    "series": "",
+    "tags": [
+      "History",
+      "United States"
+    ],
+    "gold": true,
+    "status": "ready"
+  },
+  {
+    "id": "addiction",
+    "title": "Addiction",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "adolf",
+    "title": "Adolf",
+    "series": "",
+    "tags": [],
+    "gold": true,
+    "status": "ready"
+  },
+  {
+    "id": "agency",
+    "title": "Agency",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "ai",
+    "title": "Ai",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "aitakeover",
+    "title": "Aitakeover",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "alcohol",
+    "title": "Alcohol",
+    "series": "",
+    "tags": [
+      "Technology"
+    ],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "alexander",
+    "title": "Alexander",
+    "series": "",
+    "tags": [],
+    "gold": true,
+    "status": "ready"
+  },
+  {
+    "id": "aliens",
+    "title": "Aliens",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "alta",
+    "title": "Alta",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "amish",
+    "title": "Amish",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "anatomy",
+    "title": "Anatomy",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "antarctica",
+    "title": "Antarctica",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "antisem",
+    "title": "Antisemitism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "aquinas",
+    "title": "Thomas Aquinas",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "aristotle",
+    "title": "Aristotle",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "atheism",
+    "title": "Atheism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "audit",
+    "title": "Audit",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "august",
+    "title": "August",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bahai",
+    "title": "Bahai",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bang",
+    "title": "Bang",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "banned",
+    "title": "Banned",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bees",
+    "title": "Bees",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "believe",
+    "title": "Believe",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "believers",
+    "title": "Believers",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bezos",
+    "title": "Bezos",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bible",
+    "title": "Bible",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "biochemical",
+    "title": "Biochemical",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "biology",
+    "title": "Biology",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bluecollar",
+    "title": "Bluecollar",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bluster",
+    "title": "Bluster",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bom",
+    "title": "Bom",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "borders",
+    "title": "Borders",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "brain",
+    "title": "Brain",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "branches",
+    "title": "Branches",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "buddha",
+    "title": "Buddha",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "buddhism",
+    "title": "Buddhism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "bure",
+    "title": "Bure",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "burgers",
+    "title": "Burgers",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "burr",
+    "title": "Burr",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "burton",
+    "title": "Burton",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "caesar",
+    "title": "Caesar",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "caffeine",
+    "title": "Caffeine",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "calculus",
+    "title": "Calculus",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "campus",
+    "title": "Campus",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "cancer",
+    "title": "Cancer",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "casinos",
+    "title": "Casinos",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "charkas",
+    "title": "Charkas",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "charlemagne",
+    "title": "Charlemagne",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "chemistry",
+    "title": "Chemistry",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "christianity",
+    "title": "Christianity",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "churchill",
+    "title": "Churchill",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "cia",
+    "title": "Cia",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "cn",
+    "title": "Cn",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "color",
+    "title": "Color",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "columbus",
+    "title": "Columbus",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "communism",
+    "title": "Communism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "condition",
+    "title": "Condition",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "confucius",
+    "title": "Confucius",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "congo",
+    "title": "Congo",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "control",
+    "title": "Control",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "corps",
+    "title": "Corps",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "coups",
+    "title": "Coups",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "credit",
+    "title": "Credit",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "crown",
+    "title": "Crown",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "crusades",
+    "title": "Crusades",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "cuba",
+    "title": "Cuba",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "cult",
+    "title": "Cult",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "cyrus",
+    "title": "Cyrus",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "d2d",
+    "title": "D2d",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "darwin",
+    "title": "Darwin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "dayton",
+    "title": "Dayton",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "descartes",
+    "title": "Descartes",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "dianetics",
+    "title": "Dianetics",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "dietpop",
+    "title": "Dietpop",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "disney",
+    "title": "Disney",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "dollar",
+    "title": "Dollar",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "dopamine",
+    "title": "Dopamine",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "doubt",
+    "title": "Doubt",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "drugs",
+    "title": "Drugs",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "echoes",
+    "title": "Echoes",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "economics",
+    "title": "Economics",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "edison",
+    "title": "Edison",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "egypt",
+    "title": "Egypt",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "einstein",
+    "title": "Einstein",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "elections",
+    "title": "Elections",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "electoral",
+    "title": "Electoral",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "electricity",
+    "title": "Electricity",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "ethics",
+    "title": "Ethics",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "famine",
+    "title": "Famine",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "fantasy",
+    "title": "Fantasy",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "fbi",
+    "title": "Fbi",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "fdr",
+    "title": "Fdr",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "feynman",
+    "title": "Feynman",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "field",
+    "title": "Field",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "foodie",
+    "title": "Foodie",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "foreskin",
+    "title": "Foreskin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "fortitude",
+    "title": "Fortitude",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "franklin",
+    "title": "Franklin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "fresco",
+    "title": "Fresco",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "freud",
+    "title": "Freud",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "galileo",
+    "title": "Galileo",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gandhi",
+    "title": "Gandhi",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gates'",
+    "title": "Gates'",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "genghis",
+    "title": "Genghis",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "george",
+    "title": "George",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "georgism",
+    "title": "Georgism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "germany",
+    "title": "Germany",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gig",
+    "title": "Gig",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gita",
+    "title": "Gita",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gods",
+    "title": "Gods",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "goo",
+    "title": "Goo",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "google",
+    "title": "Google",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "government",
+    "title": "Government",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gsp",
+    "title": "Gsp",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "guru",
+    "title": "Guru",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "gwb",
+    "title": "Gwb",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "haile",
+    "title": "Haile",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "halloween",
+    "title": "Halloween",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "ham",
+    "title": "Ham",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hardest",
+    "title": "Hardest",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "harriet",
+    "title": "Harriet",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hat",
+    "title": "Hat",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hawking",
+    "title": "Hawking",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "heads",
+    "title": "Heads",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "helen",
+    "title": "Helen",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "heroes",
+    "title": "Heroes",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hiddenhand",
+    "title": "Hiddenhand",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "history",
+    "title": "History",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hochi",
+    "title": "Hochi",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "holidays",
+    "title": "Holidays",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "houdini",
+    "title": "Houdini",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "howbible",
+    "title": "Howbible",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hr",
+    "title": "Hr",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "hrold",
+    "title": "Hrold",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "humans",
+    "title": "Humans",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "ibr",
+    "title": "Ibr",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "idk",
+    "title": "Idk",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "idwt",
+    "title": "Idwt",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "illuminati",
+    "title": "Illuminati",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "imagination",
+    "title": "Imagination",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "inquis",
+    "title": "Inquis",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "insideasylum",
+    "title": "Insideasylum",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "insidechina",
+    "title": "Insidechina",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "insurance",
+    "title": "Insurance",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "intelligence",
+    "title": "Intelligence",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "isaac",
+    "title": "Isaac",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "islam",
+    "title": "Islam",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "isrpal",
+    "title": "Isrpal",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jackass",
+    "title": "Jackass",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jackson",
+    "title": "Jackson",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "japan",
+    "title": "Japan",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jeff",
+    "title": "Jeff",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jefferson",
+    "title": "Jefferson",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jesse",
+    "title": "Jesse",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jesus",
+    "title": "Jesus",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jewish",
+    "title": "Jewish",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jfk",
+    "title": "Jfk",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "joan",
+    "title": "Joan",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jobs",
+    "title": "Jobs",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jung",
+    "title": "Jung",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jungle",
+    "title": "Jungle",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "jw",
+    "title": "Jw",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "kabbalah",
+    "title": "Kabbalah",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "kaiser",
+    "title": "Kaiser",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "kanye",
+    "title": "Kanye",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "kfc",
+    "title": "Kfc",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "kim",
+    "title": "Kim",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lee",
+    "title": "Lee",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lenin",
+    "title": "Lenin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lennon",
+    "title": "Lennon",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "leonardo",
+    "title": "Leonardo",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lincoln",
+    "title": "Lincoln",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lobbied",
+    "title": "Lobbied",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "love",
+    "title": "Love",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lr",
+    "title": "Lr",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lrold",
+    "title": "Lrold",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lron",
+    "title": "Lron",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "lunchtime",
+    "title": "Lunchtime",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "luther",
+    "title": "Luther",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "machi",
+    "title": "Machi",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "malcolm",
+    "title": "Malcolm",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mansu",
+    "title": "Mansu",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mao",
+    "title": "Mao",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "marie",
+    "title": "Marie",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "marx",
+    "title": "Marx",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "materialism",
+    "title": "Materialism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "math",
+    "title": "Math",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "messiah",
+    "title": "Messiah",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mike",
+    "title": "Mike",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mkultra",
+    "title": "Mkultra",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "money",
+    "title": "Money",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mormon",
+    "title": "Mormon",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mossad",
+    "title": "Mossad",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mozart",
+    "title": "Mozart",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "muhammad",
+    "title": "Muhammad",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "music",
+    "title": "Music",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "musk",
+    "title": "Musk",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "mussolini",
+    "title": "Mussolini",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "myths",
+    "title": "Myths",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nagham",
+    "title": "Nagham",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "napoleon",
+    "title": "Napoleon",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nebu",
+    "title": "Nebu",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nero",
+    "title": "Nero",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nestle",
+    "title": "Nestle",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nic",
+    "title": "Nic",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nictrap",
+    "title": "Nictrap",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "niet",
+    "title": "Niet",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nike",
+    "title": "Nike",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nintendo",
+    "title": "Nintendo",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nixon",
+    "title": "Nixon",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "northkorea",
+    "title": "Northkorea",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nsa",
+    "title": "Nsa",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "nuclear",
+    "title": "Nuclear",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "obama",
+    "title": "Obama",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "odd",
+    "title": "Odd",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "orwell",
+    "title": "Orwell",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "pantheon",
+    "title": "Pantheon",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "pantheon2",
+    "title": "Pantheon2",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "philosophy",
+    "title": "Philosophy",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "phone",
+    "title": "Phone",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "physics",
+    "title": "Physics",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "pip",
+    "title": "Pip",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "planck",
+    "title": "Planck",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "plants",
+    "title": "Plants",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "plastic",
+    "title": "Plastic",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "plato",
+    "title": "Plato",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "poker",
+    "title": "Poker",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "popes",
+    "title": "Popes",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "prenancy",
+    "title": "Prenancy",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "presidents",
+    "title": "Presidents",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "psychology",
+    "title": "Psychology",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "purdue",
+    "title": "Purdue",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "putin",
+    "title": "Putin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "pyramid",
+    "title": "Pyramid",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "quantum",
+    "title": "Quantum",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "quran",
+    "title": "Quran",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "race",
+    "title": "Race",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "ramses",
+    "title": "Ramses",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "rasputin",
+    "title": "Rasputin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "reagan",
+    "title": "Reagan",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "reincarnation",
+    "title": "Reincarnation",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "relativity",
+    "title": "Relativity",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "religion",
+    "title": "Religion",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "revolution",
+    "title": "Revolution",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "rewrite",
+    "title": "Rewrite",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "rock",
+    "title": "Rock",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "rvb",
+    "title": "Rvb",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sacredgeo",
+    "title": "Sacredgeo",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sagan",
+    "title": "Sagan",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sargon",
+    "title": "Sargon",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "saudi",
+    "title": "Saudi",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "schooled",
+    "title": "Schooled",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "science",
+    "title": "Science",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "scientology",
+    "title": "Scientology",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "shake",
+    "title": "Shake",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sikhism",
+    "title": "Sikhism",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sitcoms",
+    "title": "Sitcoms",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sleep",
+    "title": "Sleep",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "soaps",
+    "title": "Soaps",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "sociology",
+    "title": "Sociology",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "socrates",
+    "title": "Socrates",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "soros",
+    "title": "Soros",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "spinoza",
+    "title": "Spinoza",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "stalin",
+    "title": "Stalin",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "steam",
+    "title": "Steam",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "stoney",
+    "title": "Stoney",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "syria",
+    "title": "Syria",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tacos",
+    "title": "Tacos",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "talmud",
+    "title": "Talmud",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tamerlane",
+    "title": "Tamerlane",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tao",
+    "title": "Tao",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "taylor",
+    "title": "Taylor",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "teddy",
+    "title": "Teddy",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tesla",
+    "title": "Tesla",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tft",
+    "title": "Tft",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "thanksgiving",
+    "title": "Thanksgiving",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "theboys",
+    "title": "Theboys",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "thiel",
+    "title": "Thiel",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "thinkers",
+    "title": "Thinkers",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tiktok",
+    "title": "Tiktok",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "time",
+    "title": "Time",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tmk",
+    "title": "Tmk",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tmts",
+    "title": "Tmts",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tnd",
+    "title": "Tnd",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tns",
+    "title": "Tns",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tom",
+    "title": "Tom",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tommy",
+    "title": "Tommy",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tribes",
+    "title": "Tribes",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tsar",
+    "title": "Tsar",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "tyrants",
+    "title": "Tyrants",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "unitednations",
+    "title": "Unitednations",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "unsinkable",
+    "title": "Unsinkable",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "unsinkable2",
+    "title": "Unsinkable2",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "vangogh",
+    "title": "Vangogh",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "veil",
+    "title": "Veil",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "vic",
+    "title": "Vic",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "videogames",
+    "title": "Videogames",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "voltaire",
+    "title": "Voltaire",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "warming",
+    "title": "Warming",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "warrens",
+    "title": "Warrens",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "watts",
+    "title": "Watts",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "web",
+    "title": "Web",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "weed",
+    "title": "High Society",
+    "series": "",
+    "tags": [
+      "History",
+      "United States",
+      "Drugs",
+      "Politics"
+    ],
+    "gold": true,
+    "status": "ready"
+  },
+  {
+    "id": "woke",
+    "title": "Woke",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "wu",
+    "title": "Wu",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "ww1",
+    "title": "Ww1",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "xmas",
+    "title": "Xmas",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "zoro",
+    "title": "Zoro",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  },
+  {
+    "id": "zuck",
+    "title": "Zuck",
+    "series": "",
+    "tags": [],
+    "gold": false,
+    "status": "ready"
+  }
+]
