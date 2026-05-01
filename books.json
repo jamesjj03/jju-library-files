@@ -1185,7 +1185,7 @@ function Header({ mode, setMode, admin }) {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3">
         <div>
           <div className="mx-auto mb-2 inline-flex items-center gap-2 rounded-full bg-[#3b0f0f] px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[#ff6b5f] ring-1 ring-red-500/30 sm:text-xs">
-            <Flame className="h-3.5 w-3.5" /> cloud sync live
+            <Flame className="h-3.5 w-3.5" /> IPAD FIX v4 LIVE • CLOUD SYNC
           </div>
           <h1 className="text-3xl font-black tracking-[-0.07em] sm:text-5xl lg:text-6xl">
             <span className="bg-gradient-to-r from-[#f7f3ea] via-[#f5c542] to-[#ef4444] bg-clip-text text-transparent">DDM SHARKS</span>
@@ -1208,7 +1208,7 @@ function Panel({ children }) {
 }
 
 function Board({ totals, activeArea, activeShot, saveStatus, cloudError, lastCloudLoad, lastCloudSave, refreshFromCloudNow }) {
-  const statusText = saveStatus?.replaceAll("-", " ") || "loading";
+  const statusText = (saveStatus || "loading").replace(/-/g, " ");
   const timeText = lastCloudSave ? `saved ${lastCloudSave.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : lastCloudLoad ? `loaded ${lastCloudLoad.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : "waiting";
 
   return (
@@ -1358,24 +1358,22 @@ function Areas({ areas, activeArea, activeShot, switchArea, switchShot, newAreaN
     <Panel>
       <h2 className="mb-3 flex items-center text-xl font-black"><Map className="mr-2 h-5 w-5 text-[#b8860b]" /> Areas</h2>
 
-      {admin && (
-        <form onSubmit={submitArea} className="mb-3 space-y-2">
-          <input
-            value={newAreaName}
-            onChange={(e) => setNewAreaName(e.target.value)}
-            placeholder="New area name"
-            autoComplete="off"
-            className="w-full rounded-xl border-2 border-[#f5c542]/20 bg-black/35 px-4 py-3 text-base font-black text-white outline-none placeholder:text-white/35 focus:border-[#f5c542]"
-          />
-          <button
-            type="submit"
-            disabled={!newAreaName.trim()}
-            className="flex w-full items-center justify-center rounded-xl bg-[#f5c542] px-4 py-3 text-base font-black text-black shadow-lg shadow-[#f5c542]/20 disabled:opacity-40"
-          >
-            <FolderPlus className="mr-2 h-5 w-5" /> Create Area
-          </button>
-        </form>
-      )}
+      <form onSubmit={submitArea} className="mb-4 rounded-2xl border border-[#f5c542]/20 bg-black/25 p-3">
+        <p className="mb-2 text-xs font-black uppercase tracking-widest text-[#f5c542]/70">Create Area</p>
+        <input
+          value={newAreaName}
+          onChange={(e) => setNewAreaName(e.target.value)}
+          placeholder="New area name"
+          autoComplete="off"
+          className="mb-2 w-full rounded-xl border-2 border-[#f5c542]/30 bg-black/50 px-4 py-4 text-base font-black text-white outline-none placeholder:text-white/35 focus:border-[#f5c542]"
+        />
+        <button
+          type="submit"
+          className="flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#f5c542] to-[#d4af37] px-4 py-4 text-base font-black text-black shadow-lg shadow-[#f5c542]/20 active:scale-[.99]"
+        >
+          <FolderPlus className="mr-2 h-5 w-5" /> {admin ? "Create Area" : "Unlock Admin to Create"}
+        </button>
+      </form>
 
       <div className="space-y-2">
         {areas.map((a) => (
@@ -1393,24 +1391,25 @@ function Areas({ areas, activeArea, activeShot, switchArea, switchShot, newAreaN
 
       {activeArea?.screenshots?.length > 0 && (
         <div className="mt-4 space-y-2">
-          <p className="text-xs font-black uppercase tracking-widest text-white/40">Screenshots</p>
-          {activeArea.screenshots.map((s, i) => (
-            <button key={s.id} type="button" onClick={() => switchShot(s.id)} className={`w-full rounded-xl px-3 py-2 text-left text-sm font-black ${activeShot?.id === s.id ? "bg-black text-[#f5c542]" : "bg-white/[0.08]"}`}>
-              {i + 1}. {s.name}
-            </button>
-          ))}
+          <p className="text-xs font-black uppercase tracking-widest text-white/35">Screenshots</p>
+          <div className="flex gap-2 overflow-x-auto pb-1">
+            {activeArea.screenshots.map((s, i) => (
+              <button key={s.id} type="button" onClick={() => switchShot(s.id)} className={`shrink-0 rounded-xl px-3 py-2 text-sm font-black ${activeShot?.id === s.id ? "bg-[#ef4444] text-white" : "bg-white/[0.08] text-white/75"}`}>SS {i + 1}</button>
+            ))}
+          </div>
         </div>
       )}
     </Panel>
   );
 }
 
+
 function IpadFileInput({ children, multiple = true, capture = undefined, onFiles, disabled = false, className = "" }) {
   const inputId = useMemo(() => `file-${uid()}`, []);
 
   return (
-    <div className={`rounded-xl border border-[#f5c542]/15 bg-black/25 p-3 ${disabled ? "opacity-40" : ""}`}>
-      <label htmlFor={inputId} className={`mb-2 flex w-full items-center justify-center rounded-xl px-4 py-3 text-base font-black ${className}`}>
+    <div className={`w-full rounded-2xl border-2 border-[#f5c542]/30 bg-black/55 p-4 shadow-lg ${disabled ? "opacity-50" : ""}`}>
+      <label htmlFor={inputId} className={`mb-3 flex w-full cursor-pointer items-center justify-center rounded-xl px-4 py-4 text-base font-black shadow-lg ${className}`}>
         {children}
       </label>
       <input
@@ -1424,30 +1423,39 @@ function IpadFileInput({ children, multiple = true, capture = undefined, onFiles
           onFiles(e.target.files);
           e.target.value = "";
         }}
-        className="block w-full cursor-pointer rounded-lg bg-white px-3 py-2 text-sm font-bold text-black file:mr-3 file:rounded-md file:border-0 file:bg-[#f5c542] file:px-3 file:py-2 file:text-sm file:font-black file:text-black"
+        className="block w-full cursor-pointer rounded-xl border-2 border-white/30 bg-white px-3 py-4 text-sm font-black text-black file:mr-3 file:rounded-lg file:border-0 file:bg-black file:px-4 file:py-3 file:text-sm file:font-black file:text-[#f5c542]"
       />
-      <p className="mt-2 text-center text-[11px] font-bold text-white/40">If the big button fails on old iPad, tap the white file picker above.</p>
+      <p className="mt-2 text-center text-xs font-black text-[#f5c542]/80">Old iPad fallback: tap the white Choose File box above.</p>
+    </div>
+  );
+}
+
+function NativeUploadStack({ upload, disabled = false }) {
+  return (
+    <div className="mx-auto grid w-full max-w-md gap-3 rounded-3xl border-2 border-red-500/35 bg-red-950/20 p-4 shadow-2xl shadow-red-950/30">
+      <div className="rounded-2xl bg-black/60 p-3 text-center text-xs font-black uppercase tracking-widest text-[#ff6b5f] ring-1 ring-red-500/25">
+        IPAD FIX v4 LIVE
+      </div>
+      <IpadFileInput disabled={disabled} onFiles={upload} className="bg-[#f5c542] text-black">
+        <ImageIcon className="mr-2 h-5 w-5" /> Choose Screenshot / Camera Roll
+      </IpadFileInput>
+      <IpadFileInput disabled={disabled} multiple={false} capture="environment" onFiles={upload} className="bg-gradient-to-r from-red-700 to-red-500 text-white">
+        <ImageIcon className="mr-2 h-5 w-5" /> Take Photo
+      </IpadFileInput>
+      <p className="text-center text-xs font-bold text-white/45">PNG/JPG screenshots work best. HEIC may fail on older iPads.</p>
     </div>
   );
 }
 
 function UploadBox({ upload, admin }) {
-  const disabled = !admin;
-
   return (
     <Panel>
       <h2 className="mb-3 flex items-center text-xl font-black"><Upload className="mr-2 h-5 w-5" /> Upload</h2>
       <p className="mb-3 rounded-xl bg-white/[0.08] p-3 text-sm font-bold text-white/60">
-        iPad-safe upload. Pick screenshots from Photos, or take a new photo.
+        iPad-safe upload. This uses real native file inputs, not hidden button tricks.
       </p>
-      <div className="grid gap-2">
-        <IpadFileInput disabled={disabled} onFiles={upload} className="bg-[#f5c542] text-black">
-          <ImageIcon className="mr-2 h-5 w-5" /> Choose From Camera Roll
-        </IpadFileInput>
-        <IpadFileInput disabled={disabled} multiple={false} capture="environment" onFiles={upload} className="bg-gradient-to-r from-red-700 to-red-500 text-white">
-          <ImageIcon className="mr-2 h-5 w-5" /> Take Photo
-        </IpadFileInput>
-      </div>
+      {!admin && <p className="mb-3 rounded-xl bg-red-950/50 p-3 text-sm font-black text-red-200">Admin is locked. Unlock first, then upload.</p>}
+      <NativeUploadStack upload={upload} disabled={!admin} />
     </Panel>
   );
 }
@@ -1487,11 +1495,7 @@ function MapPanel({ fileRef, upload, activeShot, canvasRef, overlayRef, canvasCl
           <button onClick={() => setShowDots(!showDots)} className="rounded-xl bg-black px-3 py-2 text-sm font-black text-[#f5c542]">{showDots ? <EyeOff className="mr-1 inline h-4 w-4" /> : <Eye className="mr-1 inline h-4 w-4" />}Dots</button>
           <button onClick={() => setShowTurf(!showTurf)} className="rounded-xl bg-black px-3 py-2 text-sm font-black text-[#f5c542]">{showTurf ? <EyeOff className="mr-1 inline h-4 w-4" /> : <Eye className="mr-1 inline h-4 w-4" />}Turf</button>
           <button onClick={() => setShowSold(!showSold)} className={`rounded-xl px-3 py-2 text-xs font-black ${showSold ? "bg-[#7f1d1d] text-white" : "bg-black/60 text-white/35"}`}>Sold {showSold ? "ON" : "OFF"}</button>
-          {uploadEnabled && (
-            <IpadFileInput onFiles={upload} className="bg-[#f5c542] px-3 py-2 text-xs text-black">
-              Upload
-            </IpadFileInput>
-          )}
+          <span className="rounded-xl bg-red-950/50 px-3 py-2 text-xs font-black text-red-200 ring-1 ring-red-500/25">IPAD v4</span>
         </div>
       </div>
       <div
@@ -1510,16 +1514,9 @@ function MapPanel({ fileRef, upload, activeShot, canvasRef, overlayRef, canvasCl
           <div className="p-8 text-center">
             <Upload className="mx-auto mb-4 h-14 w-14" />
             <h2 className="text-3xl font-black">Upload screenshots for this area</h2>
-            {uploadEnabled && (
-              <div className="mx-auto mt-5 grid max-w-sm gap-2">
-                <IpadFileInput onFiles={upload} className="bg-[#f5c542] text-black">
-                  Choose From Camera Roll
-                </IpadFileInput>
-                <IpadFileInput onFiles={upload} multiple={false} capture="environment" className="bg-gradient-to-r from-red-700 to-red-500 text-white">
-                  Take Photo
-                </IpadFileInput>
-              </div>
-            )}
+            <div className="mt-5">
+              <NativeUploadStack upload={upload} disabled={!uploadEnabled} />
+            </div>
           </div>
         )}
         <div className={activeShot ? "relative max-w-full" : "hidden"}>
