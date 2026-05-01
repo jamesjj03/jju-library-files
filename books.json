@@ -1452,10 +1452,14 @@
   {
     "id": "gwb",
     "title": "George W. Bush",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "GWB.jpg",
     "bookFile": "gwb.epub",
-    "tags": [],
+    "tags": [
+      "United States",
+      "Biography",
+      "Politics"
+    ],
     "gold": false,
     "status": "unavailable"
   },
