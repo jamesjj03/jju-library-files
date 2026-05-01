@@ -677,9 +677,19 @@ export default function DDMSharksOps() {
   };
 
   const createArea = () => {
-    if (!admin || !newAreaName.trim()) return;
-    const area = { id: uid(), name: newAreaName.trim(), screenshots: [], turfs: [], createdAt: new Date().toISOString() };
-    setApp((prev) => ({ ...prev, areas: [area, ...prev.areas], activeAreaId: area.id, activeShotId: null }));
+    const name = newAreaName.trim();
+    if (!admin) {
+      setCloudError("Admin is locked. Tap Admin and enter the PIN first.");
+      return;
+    }
+    if (!name) {
+      setCloudError("Type an area name first.");
+      return;
+    }
+
+    const area = { id: uid(), name, screenshots: [], turfs: [], createdAt: new Date().toISOString() };
+    setApp((prev) => ({ ...prev, areas: [area, ...(prev.areas || [])], activeAreaId: area.id, activeShotId: null }));
+    setCloudError("");
     setNewAreaName("");
     setMode("upload");
   };
@@ -720,18 +730,55 @@ export default function DDMSharksOps() {
   });
 
   const upload = (files) => {
-    if (!admin || !activeArea || !files?.length) return;
-    Promise.all(Array.from(files).map(fileToShot)).then((rawShots) => {
+    if (!admin) {
+      setCloudError("Admin is locked. Tap Admin and enter the PIN before uploading.");
+      return;
+    }
+    const picked = Array.from(files || []);
+    if (!picked.length) {
+      setCloudError("No file selected.");
+      return;
+    }
+
+    setCloudError("Uploading image...");
+
+    Promise.all(picked.map(fileToShot)).then((rawShots) => {
       const shots = rawShots.filter(Boolean);
       if (!shots.length) {
-        setCloudError("Upload failed. Try a screenshot/photo saved as PNG or JPG.");
+        setCloudError("Upload failed. On iPad, use a normal screenshot/photo saved as PNG or JPG.");
         return;
       }
-      setApp((prev) => ({
-        ...prev,
-        activeShotId: shots[0]?.id || prev.activeShotId,
-        areas: prev.areas.map((a) => a.id === activeArea.id ? { ...a, screenshots: [...(a.screenshots || []), ...shots] } : a),
-      }));
+
+      setApp((prev) => {
+        const areas = prev.areas || [];
+        let targetAreaId = prev.activeAreaId || areas[0]?.id || null;
+        let nextAreas = areas;
+
+        if (!targetAreaId) {
+          const newUploadArea = {
+            id: uid(),
+            name: "Uploaded Area",
+            screenshots: [],
+            turfs: [],
+            createdAt: new Date().toISOString(),
+          };
+          targetAreaId = newUploadArea.id;
+          nextAreas = [newUploadArea, ...areas];
+        }
+
+        return {
+          ...prev,
+          activeAreaId: targetAreaId,
+          activeShotId: shots[0]?.id || prev.activeShotId,
+          areas: nextAreas.map((a) =>
+            a.id === targetAreaId
+              ? { ...a, screenshots: [...(a.screenshots || []), ...shots] }
+              : a
+          ),
+        };
+      });
+
+      setCloudError("");
       setMode("count");
     });
   };
@@ -1204,7 +1251,7 @@ function Admin({ admin, pin, setPin, unlock, exportData, resetData, compact, loc
   if (!admin && !open) {
     return (
       <div className="text-center">
-        <button onClick={() => setOpen(true)} className="rounded-full border border-[#f5c542]/10 bg-black/20 px-3 py-1.5 text-[11px] font-black uppercase tracking-widest text-white/25 hover:text-[#f5c542]">
+        <button onClick={() => setOpen(true)} className="rounded-full border border-[#f5c542]/30 bg-black/45 px-4 py-2 text-xs font-black uppercase tracking-widest text-[#f5c542]/70 hover:text-[#f5c542]">
           Admin
         </button>
       </div>
@@ -1359,10 +1406,15 @@ function Areas({ areas, activeArea, activeShot, switchArea, switchShot, newAreaN
 }
 
 function IpadFileInput({ children, multiple = true, capture = undefined, onFiles, disabled = false, className = "" }) {
+  const inputId = useMemo(() => `file-${uid()}`, []);
+
   return (
-    <label className={`relative flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl px-4 py-3 text-base font-black shadow-lg transition active:scale-[0.99] ${disabled ? "pointer-events-none opacity-40" : ""} ${className}`}>
-      {children}
+    <div className={`rounded-xl border border-[#f5c542]/15 bg-black/25 p-3 ${disabled ? "opacity-40" : ""}`}>
+      <label htmlFor={inputId} className={`mb-2 flex w-full items-center justify-center rounded-xl px-4 py-3 text-base font-black ${className}`}>
+        {children}
+      </label>
       <input
+        id={inputId}
         type="file"
         accept="image/*,.png,.jpg,.jpeg,.heic,.heif"
         multiple={multiple}
@@ -1372,9 +1424,10 @@ function IpadFileInput({ children, multiple = true, capture = undefined, onFiles
           onFiles(e.target.files);
           e.target.value = "";
         }}
-        className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+        className="block w-full cursor-pointer rounded-lg bg-white px-3 py-2 text-sm font-bold text-black file:mr-3 file:rounded-md file:border-0 file:bg-[#f5c542] file:px-3 file:py-2 file:text-sm file:font-black file:text-black"
       />
-    </label>
+      <p className="mt-2 text-center text-[11px] font-bold text-white/40">If the big button fails on old iPad, tap the white file picker above.</p>
+    </div>
   );
 }
 
