@@ -70,7 +70,21 @@ const DOT_PRESETS = [
 ];
 
 function uid() {
-  return globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+  const cryptoObj =
+    (typeof window !== "undefined" && window.crypto) ||
+    (typeof self !== "undefined" && self.crypto) ||
+    null;
+
+  if (cryptoObj && typeof cryptoObj.getRandomValues === "function") {
+    const bytes = new Uint8Array(16);
+    cryptoObj.getRandomValues(bytes);
+    bytes[6] = (bytes[6] & 0x0f) | 0x40;
+    bytes[8] = (bytes[8] & 0x3f) | 0x80;
+    const hex = Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+    return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+  }
+
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
 function openDb() {
@@ -898,11 +912,45 @@ export default function DDMSharksOps() {
 
   const getCanvasPoint = (e) => {
     const canvas = overlayRef.current;
+    if (!canvas) return { x: 0, y: 0 };
+
+    const source =
+      e?.touches?.[0] ||
+      e?.changedTouches?.[0] ||
+      e?.nativeEvent?.touches?.[0] ||
+      e?.nativeEvent?.changedTouches?.[0] ||
+      e;
+
     const rect = canvas.getBoundingClientRect();
     return {
-      x: (e.clientX - rect.left) * (canvas.width / rect.width),
-      y: (e.clientY - rect.top) * (canvas.height / rect.height),
+      x: (source.clientX - rect.left) * (canvas.width / rect.width),
+      y: (source.clientY - rect.top) * (canvas.height / rect.height),
     };
+  };
+
+  const handleMapTap = (e) => {
+    if (e?.type?.startsWith("touch")) e.preventDefault();
+    canvasClick(e);
+  };
+
+  const handlePointerOrMouseDown = (e) => {
+    startSwipe(e);
+    startDrag(e);
+  };
+
+  const handleTouchStart = (e) => {
+    startSwipe(e.touches?.[0] || e);
+    startDrag(e);
+  };
+
+  const handleTouchMove = (e) => {
+    if (dragState || editMode) e.preventDefault();
+    moveDrag(e);
+  };
+
+  const handleTouchEnd = (e) => {
+    stopDrag(e);
+    endSwipe(e.changedTouches?.[0] || e);
   };
 
   const canvasClick = (e) => {
@@ -1078,7 +1126,7 @@ export default function DDMSharksOps() {
               <AreaDeck areas={app.areas} switchArea={switchArea} setMode={setMode} admin={admin} />
             ) : (
               <>
-                <MapPanel fileRef={fileRef} upload={upload} activeShot={activeShot} canvasRef={canvasRef} overlayRef={overlayRef} canvasClick={canvasClick} mode={mode} showDots={showDots} setShowDots={setShowDots} showTurf={showTurf} setShowTurf={setShowTurf} showSold={showSold} setShowSold={setShowSold} uploadEnabled={admin} startDrag={startDrag} moveDrag={moveDrag} stopDrag={stopDrag} editMode={editMode} startSwipe={startSwipe} endSwipe={endSwipe} />
+                <MapPanel fileRef={fileRef} upload={upload} activeShot={activeShot} canvasRef={canvasRef} overlayRef={overlayRef} canvasClick={handleMapTap} mode={mode} showDots={showDots} setShowDots={setShowDots} showTurf={showTurf} setShowTurf={setShowTurf} showSold={showSold} setShowSold={setShowSold} uploadEnabled={admin} startDrag={handlePointerOrMouseDown} moveDrag={moveDrag} stopDrag={stopDrag} editMode={editMode} startSwipe={startSwipe} endSwipe={endSwipe} handleTouchStart={handleTouchStart} handleTouchMove={handleTouchMove} handleTouchEnd={handleTouchEnd} />
                 <TurfLegend turfs={visibleTurfs} />
               </>
             )}
@@ -1483,7 +1531,7 @@ function ManualBox({ manualRep, setManualRep, polygon, clear, saveManual, admin,
 function RepFilter({ selectedRep, setSelectedRep }) { return <Panel><h2 className="mb-4 flex items-center text-2xl font-black"><Filter className="mr-2" /> Map Filter</h2><div className="grid grid-cols-2 gap-2">{["All", ...REPS].map((r) => <button key={r} onClick={() => setSelectedRep(r)} className={`rounded-2xl px-4 py-3 text-lg font-black ${selectedRep === r ? "bg-black text-[#f5c542]" : "bg-white/[0.08]"}`}>{r}</button>)}</div></Panel>; }
 function Tuning({ options, setOptions, reCount }) { return <Panel><h2 className="mb-4 flex items-center text-2xl font-black"><Wand2 className="mr-2" /> Tuning</h2><Slider label="Sensitivity" value={options.sensitivity} min={0} max={10} step={1} onChange={(v) => setOptions({ ...options, sensitivity: Number(v) })} /><Slider label="Dot Size" value={options.expectedDotArea} min={60} max={420} step={10} onChange={(v) => setOptions({ ...options, expectedDotArea: Number(v) })} /><button onClick={reCount} className="mt-4 w-full rounded-2xl bg-black py-4 text-xl font-black text-[#f5c542]">Recount</button></Panel>; }
 function Slider({ label, value, min, max, step, onChange }) { return <label className="mb-4 block"><div className="mb-2 flex justify-between text-lg font-black"><span>{label}</span><span>{value}</span></div><input type="range" min={min} max={max} step={step} value={value} onChange={(e) => onChange(e.target.value)} className="w-full accent-[#b8860b]" /></label>; }
-function MapPanel({ fileRef, upload, activeShot, canvasRef, overlayRef, canvasClick, mode, showDots, setShowDots, showTurf, setShowTurf, showSold, setShowSold, uploadEnabled, startDrag, moveDrag, stopDrag, editMode, startSwipe, endSwipe }) {
+function MapPanel({ fileRef, upload, activeShot, canvasRef, overlayRef, canvasClick, mode, showDots, setShowDots, showTurf, setShowTurf, showSold, setShowSold, uploadEnabled, startDrag, moveDrag, stopDrag, editMode, startSwipe, endSwipe, handleTouchStart, handleTouchMove, handleTouchEnd }) {
   return (
     <div className="rounded-[1.5rem] border border-[#f5c542]/15 bg-[#241a13]/90 p-3 text-[#f7f3ea] shadow-xl shadow-black/30 backdrop-blur-xl sm:p-4">
       <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
@@ -1500,11 +1548,19 @@ function MapPanel({ fileRef, upload, activeShot, canvasRef, overlayRef, canvasCl
       </div>
       <div
         onClick={canvasClick}
-        onPointerDown={startSwipe}
+        onMouseDown={startDrag}
+        onMouseMove={moveDrag}
+        onMouseUp={(e) => { stopDrag(e); endSwipe(e); }}
+        onMouseLeave={stopDrag}
+        onPointerDown={startDrag}
         onPointerMove={moveDrag}
-        onPointerUp={(e) => { stopDrag(); endSwipe(e); }}
+        onPointerUp={(e) => { stopDrag(e); endSwipe(e); }}
         onPointerCancel={stopDrag}
         onPointerLeave={stopDrag}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onTouchCancel={stopDrag}
         onDrop={(e) => { e.preventDefault(); if (uploadEnabled) upload(e.dataTransfer.files); }}
         onDragOver={(e) => e.preventDefault()}
         className={`relative grid min-h-[560px] touch-none place-items-center overflow-auto rounded-[1.25rem] border-2 border-dashed border-[#f5c542]/20 bg-black/35 sm:min-h-[650px] ${mode === "manual" || mode === "erase" ? "cursor-crosshair" : ""}`}
