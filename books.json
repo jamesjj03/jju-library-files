@@ -793,7 +793,8 @@
     "coverFile": "Control.jpg",
     "bookFile": "Control.epub",
     "tags": [
-      "Politics"
+      "Politics",
+      "World"
     ],
     "gold": true,
     "status": "ready"
@@ -1329,7 +1330,7 @@
   {
     "id": "george",
     "title": "George",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "George.jpg",
     "bookFile": "George.epub",
     "tags": [
@@ -1667,7 +1668,8 @@
     "coverFile": "Humans.jpg",
     "bookFile": "Humans.epub",
     "tags": [
-      "History"
+      "History",
+      "World"
     ],
     "gold": true,
     "status": "ready"
@@ -1723,7 +1725,9 @@
     "coverFile": "Imagination.jpg",
     "bookFile": "Imagination.epub",
     "tags": [
-      "History"
+      "History",
+      "Culture",
+      "Psychology"
     ],
     "gold": false,
     "status": "ready"
@@ -1735,7 +1739,9 @@
     "coverFile": "Inquis.jpg",
     "bookFile": "Inquis.epub",
     "tags": [
-      "History"
+      "History",
+      "Religion",
+      "Christianity"
     ],
     "gold": true,
     "status": "ready"
@@ -1801,7 +1807,9 @@
     "coverFile": "Islam.jpg",
     "bookFile": "Islam.epub",
     "tags": [
-      "History"
+      "History",
+      "Islam",
+      "Religion"
     ],
     "gold": true,
     "status": "ready"
@@ -1831,7 +1839,7 @@
   {
     "id": "jackson",
     "title": "Andrew Jackson",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "Jackson.jpg",
     "bookFile": "Jackson.epub",
     "tags": [
@@ -1867,7 +1875,7 @@
   {
     "id": "jefferson",
     "title": "Jefferson",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "Jefferson.jpg",
     "bookFile": "Jefferson.epub",
     "tags": [
@@ -1911,7 +1919,7 @@
   {
     "id": "jfk",
     "title": "JFK",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "JFK.jpg",
     "bookFile": "JFK.epub",
     "tags": [
@@ -2077,7 +2085,7 @@
   {
     "id": "lincoln",
     "title": "Lincoln",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "Lincoln.jpg",
     "bookFile": "Lincoln.epub",
     "tags": [
@@ -2511,7 +2519,7 @@
   {
     "id": "nixon",
     "title": "Nixon",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "Nixon.jpg",
     "bookFile": "Nixon.epub",
     "tags": [
@@ -2561,7 +2569,7 @@
   {
     "id": "obama",
     "title": "Obama",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "Obama.jpg",
     "bookFile": "Obama.epub",
     "tags": [
@@ -2853,7 +2861,7 @@
   {
     "id": "reagan",
     "title": "Reagan",
-    "series": "",
+    "series": "Presidents",
     "coverFile": "Reagan.jpg",
     "bookFile": "Reagan.epub",
     "tags": [
@@ -2935,7 +2943,10 @@
     "coverFile": "RVB.jpg",
     "bookFile": "RVB.epub",
     "tags": [
-      "History"
+      "History",
+      "Politics",
+      "Culture",
+      "United States"
     ],
     "gold": true,
     "status": "ready"
@@ -3224,7 +3235,6 @@
     "coverFile": "Teddy.jpg",
     "bookFile": "Teddy.epub",
     "tags": [
-      "Presidents",
       "History"
     ],
     "gold": false,
