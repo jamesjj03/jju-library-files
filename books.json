@@ -2335,7 +2335,9 @@
     "coverFile": "Mozart.jpg",
     "bookFile": "Mozart.epub",
     "tags": [
-      "History"
+      "History",
+      "Biography",
+      "Music"
     ],
     "gold": true,
     "status": "ready"
@@ -3174,7 +3176,10 @@
     "series": "What the Scripture Actually Says",
     "coverFile": "talmud.jpg",
     "bookFile": "Talmud.epub",
-    "tags": [],
+    "tags": [
+      "Religion",
+      "Culture"
+    ],
     "gold": true,
     "status": "ready"
   },
